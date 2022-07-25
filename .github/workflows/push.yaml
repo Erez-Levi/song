@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+    branches:
+    - master
+    
+jobs:
+  Build_Push_Image:
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+    - uses: 'erez-levi/build_docker_push@1.0'
+      with:
+        docker_repo: "dfasf"
+        image_name: "aaa"
+        image_path: "/asdas"
+    
