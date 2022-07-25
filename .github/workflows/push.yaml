@@ -11,7 +11,7 @@ jobs:
     permissions: write-all
 
     steps:
-    - uses: 'erez-levi/build_docker_push@1.1'
+    - uses: 'erez-levi/build_docker_push@1.2'
       with:
         docker_repo: "dfasf"
         image_name: "aaa"
